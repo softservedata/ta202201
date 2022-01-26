@@ -8,13 +8,13 @@ public class App2 {
 //    }
 
     public void myPrint() {
-        System.out.println("PRIVET");
+        //List<String> s;
         System.out.println("myPrint() i = " + i); // i.toString()
     }
 
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        System.out.println("Hello");
         int i = 456;
         // int i;
         //
