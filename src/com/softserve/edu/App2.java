@@ -30,6 +30,10 @@ public class App2 {
         i = 49;
         System.out.println("i = " + i); // 49
         System.out.println("(char) i = " + (char) i); // 1
+        //
+        byte b = 126;
+        b = (byte) (b + 1);
+        System.out.println("b = " + b);
     }
 
 }
