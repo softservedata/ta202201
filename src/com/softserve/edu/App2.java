@@ -8,12 +8,13 @@ public class App2 {
 //    }
 
     public void myPrint() {
+        System.out.println("PRIVET");
         System.out.println("myPrint() i = " + i); // i.toString()
     }
 
 
     public static void main(String[] args) {
-        System.out.println("Hello");
+        System.out.println("Hello Ivan");
         int i = 456;
         // int i;
         //
