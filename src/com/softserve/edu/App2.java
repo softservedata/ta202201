@@ -8,7 +8,7 @@ public class App2 {
 //    }
 
     public void myPrint() {
-        //List<String> s;
+        System.out.println("PRIVET");
         System.out.println("myPrint() i = " + i); // i.toString()
     }
 
