@@ -7,7 +7,8 @@ public class App2 {
 //        System.out.println("Constructor");
 //    }
 
-    public void myPrint() {
+    public void myPrint()
+    {
         System.out.println("myPrint() i = " + i); // i.toString()
     }
 
@@ -29,6 +30,10 @@ public class App2 {
         i = 49;
         System.out.println("i = " + i); // 49
         System.out.println("(char) i = " + (char) i); // 1
+
+        //Operation with bytes
+        byte b = 126 + 1;
+        System.out.println("Result: " + b);
     }
 
 }
