@@ -1,5 +1,8 @@
 package com.softserve.edu;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 public class App2 {
     private int i = 123; // = 0; by default
 
@@ -29,6 +32,15 @@ public class App2 {
         i = 49;
         System.out.println("i = " + i); // 49
         System.out.println("(char) i = " + (char) i); // 1
+
+        // My Part
+        App2.printMessage("Homework was done by OlenaT");
+    }
+
+    private static void printMessage (String message) {
+        String separator = " ";
+        LocalDate homeWorkDate = LocalDate.of( 2022 , 1 , 27 );
+        System.out.println(message + separator + homeWorkDate);
     }
 
 }
