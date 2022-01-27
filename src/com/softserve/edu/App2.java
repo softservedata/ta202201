@@ -26,8 +26,8 @@ public class App2 {
         app2.myPrint(); // 321
         //app2 = null;
         //
-        i = 49;
-        System.out.println("i = " + i); // 49
+        i = -3;
+        System.out.println("i = " + i); // -3
         System.out.println("(char) i = " + (char) i); // 1
     }
 
