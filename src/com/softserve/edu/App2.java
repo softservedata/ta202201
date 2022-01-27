@@ -1,5 +1,7 @@
 package com.softserve.edu;
 
+import java.sql.SQLOutput;
+
 public class App2 {
     private int i = 123; // = 0; by default
 
@@ -29,6 +31,20 @@ public class App2 {
         i = 49;
         System.out.println("i = " + i); // 49
         System.out.println("(char) i = " + (char) i); // 1
+        int cod = 33;
+        int symb = cod;
+        int end = cod +30;
+        System.out.println("Character codes " + cod + " till " +end + ":");
+        while (cod <= end) {
+            System.out.print(cod + " ");
+            cod++;
+        }
+        System.out.println("");
+        System.out.println("Their corresponding symbols: ");
+        while (symb <= end) {
+            System.out.print((char)symb + " ");
+            symb++;
+        }
     }
 
 }
