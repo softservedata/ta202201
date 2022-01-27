@@ -31,6 +31,7 @@ public class App2 {
         i = 49;
         System.out.println("i = " + i); // 49
         System.out.println("(char) i = " + (char) i); // 1
+        System.out.println("Symbols for their characters output below:");
         int cod = 33;
         int symb = cod;
         int end = cod +30;
