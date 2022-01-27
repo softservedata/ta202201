@@ -13,7 +13,7 @@ public class App2 {
 
 
     public static void main(String[] args) {
-        System.out.println("Hello");
+        System.out.println("Hi from Alex to everyone! :)");
         int i = 456;
         // int i;
         //
