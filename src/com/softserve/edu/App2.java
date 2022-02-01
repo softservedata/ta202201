@@ -29,6 +29,7 @@ public class App2 {
         i = 49;
         System.out.println("i = " + i); // 49
         System.out.println("(char) i = " + (char) i); // 1
+        System.out.println("i + i + i = " + (i + i + i));
     }
 
 }
