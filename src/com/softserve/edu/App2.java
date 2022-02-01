@@ -31,7 +31,7 @@ public class App2 {
         System.out.println("i = " + i); // 49
         System.out.println("(char) i = " + (char) i); // 1
 
-        //Operation with bytes
+        //HW 3 Operation with bytes
         byte b = 126 + 1;
         System.out.println("Result: " + b);
     }
