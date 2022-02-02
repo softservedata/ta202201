@@ -1,8 +1,6 @@
 package com.softserve.edu04;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class ApplCondition {
     public static void main(String[] args) throws IOException {
@@ -99,10 +97,10 @@ public class ApplCondition {
         */
         /*-
         int a = 37, b = 24;
-        //if (a > 5 && (b = 72) < 50) {
+        if (a > 5 && (b = 72) < 50) {
         //if (a > 5 && (b = 12) < 50) {
         //if (a > 50 && (b = 72) < 50) {
-        if (a > 50 & (b = 72) < 50) {
+        //if (a > 50 & (b = 72) < 50) {
             System.out.println("\tDo something...");
             System.out.println("\tVariable 'b' = " + b);
         }
@@ -146,7 +144,7 @@ public class ApplCondition {
         System.out.println("isLeap = " + isLeap);
         */
         //
-        // /*-
+        /*-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Do you enjoy Java? (yes/no/maybe): ");
         String input = br.readLine();
@@ -175,6 +173,6 @@ public class ApplCondition {
         } else {
             System.out.println("Wrong! 2");
         }
-        // */
+        */
     }
 }
