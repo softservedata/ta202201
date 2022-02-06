@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Product {
 
-    public String productName;
-    public int price;
+    private String productName;
+    private int price;
 
     //constructor receives variables which is passed from creating object/instance
     public Product(String productName, int price) {
