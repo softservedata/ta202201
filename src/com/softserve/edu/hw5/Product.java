@@ -6,11 +6,6 @@ public class Product {
     private String name;
     private int price;
 
-    public Product() {
-        this.name = "";
-        this.price = 0;
-    }
-
     public String getName() {
         return name;
     }
@@ -52,8 +47,8 @@ public class Product {
         Product[] products = {new Product("Bread", 20), new Product("Butter", 76), new Product("Bread", 20),
                 new Product("Cheese", 120), new Product("Bread", 20)};
         for (int i = 0; i < products.length; i++) {
-            for (int j = 1; j < products.length; j++) {
-                if (products[i].equals(products[j]) && (i < j)) {
+            for (int j = i+1; j < products.length; j++) {
+                if (products[i].equals(products[j])) {
                     System.out.println(products[i]);
                 }
             }
