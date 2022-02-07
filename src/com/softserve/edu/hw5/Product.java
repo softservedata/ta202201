@@ -18,7 +18,6 @@ public class Product {
     public void setProductName(String productName) {
         this.productName = productName;
     }
-
     public void setProductPrice(int productPrice) {
         this.productPrice = productPrice;
     }
