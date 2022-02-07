@@ -32,7 +32,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "\nProduct " + productName + " at " + productPrice;
+        return "\n Product " + productName + " at " + productPrice;
     }
 /*
     @Override
