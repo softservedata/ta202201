@@ -35,12 +35,13 @@ public class Product {
     public String toString() {
         return "\nProduct " + productName + " at " + productPrice;
     }
-///*
+/*
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if ((o == null) || (getClass() != o.getClass())) {
             return false;
+        }
             Product other = (Product) o;
             if ((productPrice != other.productPrice)
                     || ((productName == null) && (other.productName != null))
@@ -49,13 +50,11 @@ public class Product {
             }
             if ((productName == null) && (other.productName == null)) {
                 return true;
+            }
                 return other.equals(other.productName);
                 //return productPrice == product.productPrice && Objects.equals(productName, product.productName);
             }
-        }
-    }
-
-// */
+*/
 /*
     @Override
     public int hashCode() {
@@ -70,4 +69,12 @@ public class Product {
             result = prime * result + ((productName == null) ? 0 : productName.hashCode());
             return result;
         }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return productPrice == product.productPrice && Objects.equals(productName, product.productName);
     }
+}
