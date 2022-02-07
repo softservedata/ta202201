@@ -35,7 +35,7 @@ public class Product {
     public String toString() {
         return "\nProduct " + productName + " at " + productPrice;
     }
-/*
+///*
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -55,7 +55,7 @@ public class Product {
         }
     }
 
- */
+// */
 /*
     @Override
     public int hashCode() {
