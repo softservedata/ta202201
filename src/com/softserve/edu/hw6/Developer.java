@@ -42,18 +42,24 @@ public class Developer extends Person {
 
     public static void main(String[] args) {
         Developer[] developers = {new Developer("Andy", 32, "frontend"), new Developer("Lucy", 31, "frontend"),
-                new Developer("Mark", 33, "backend"), new Developer("Tom", 34, "backend"),
+                new Developer("Mark", 31, "backend"), new Developer("Tom", 34, "backend"),
                 new Developer("Uli", 35, "full stack"), new Developer("Ann", 34, "frontend")};
         System.out.println(Arrays.toString(developers));
         for (int i = 0; i < developers.length - 1; i++) {
             for (int j = 0; j < developers.length - 1 - i; j++) {
-                if (developers[j].getAge() > developers[j+1].getAge()) {
+                if (developers[j].getAge() > developers[j + 1].getAge()) {
                     Developer temporary = developers[j];
-                    developers[j] = developers[j+1];
-                    developers[j+1] = temporary;
+                    developers[j] = developers[j + 1];
+                    developers[j + 1] = temporary;
                 }
             }
         }
         System.out.println(Arrays.toString(developers));
+        System.out.println("The youngest developers");
+        for (int i = 0; i < developers.length; i++) {
+            if (developers[0].getAge() == developers[i].getAge()) {
+                System.out.println(developers[i]);
+            }
+        }
     }
 }
