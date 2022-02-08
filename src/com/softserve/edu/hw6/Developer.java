@@ -30,4 +30,12 @@ public class Developer extends Person{
     public int hashCode() {
         return Objects.hash(super.hashCode(), direction);
     }
+
+    @Override
+    public String toString() {
+        return "Developer{" + super.getName() +
+                ", " + super.getAge() +
+                ", direction: " + getDirection() +
+                '}';
+    }
 }
