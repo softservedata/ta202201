@@ -1,4 +1,4 @@
-package com.softserve.edu;
+package com.softserve.edu.hw3;
 
 public class App2 {
     private int i = 123; // = 0; by default
