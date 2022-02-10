@@ -6,7 +6,7 @@ public class Main {
 
         Product[] products = {
                 new Product("Snack", 4),
-                new Product("Cake", 6),
+                new Product("Cheese", 6),
                 new Product("Snack", 4),
                 new Product("Cheese", 7),
                 new Product("Water", 1)
