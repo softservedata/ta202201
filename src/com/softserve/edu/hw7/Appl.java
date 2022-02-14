@@ -7,8 +7,8 @@ public class Appl {
         Figure[] figures = {new Rectangle(3, 6), new Square(5), new Triangle(4, 8, 9), new Rectangle(3, 99)};
         System.out.println(Arrays.toString(figures));
         int iMax = Appl.maxPerimeter(figures);
-        System.out.println("Max perimeter " + figures[3].getName());
-        System.out.println("Max perimeter " + figures[3].getPerimeter());
+        System.out.println(figures[iMax].toString());
+        System.out.println("Max perimeter " + figures[iMax].getPerimeter());
     }
 
      private static int maxPerimeter(Figure[] figures) {

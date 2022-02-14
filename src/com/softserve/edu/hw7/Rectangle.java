@@ -12,7 +12,7 @@ public class Rectangle extends Figure{
 
     @Override
     public String toString() {
-        return super.toString() + "Rectangle{" +
+        return super.toString() +
                 "width=" + width +
                 ", height=" + height +
                 '}';

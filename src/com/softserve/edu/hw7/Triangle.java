@@ -14,7 +14,7 @@ public class Triangle  extends Figure{
 
     @Override
     public String toString() {
-        return super.toString() + "Triangle{" +
+        return super.toString() +
                 "side1=" + side1 +
                 ", side2=" + side2 +
                 ", edge=" + edge +

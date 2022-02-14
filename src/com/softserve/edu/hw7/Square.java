@@ -10,7 +10,7 @@ public class Square extends Figure{
 
     @Override
     public String toString() {
-        return super.toString() + "Square{" +
+        return super.toString() +
                 "edge=" + edge +
                 '}';
     }

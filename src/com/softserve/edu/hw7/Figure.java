@@ -11,5 +11,12 @@ public abstract class Figure {
         return name;
     }
 
+    @Override
+    public String toString() {
+        return "Figure{" +
+                "name='" + name + '\'' +
+                ',';
+    }
+
     public abstract int getPerimeter();
 }
