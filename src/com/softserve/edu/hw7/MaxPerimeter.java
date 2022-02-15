@@ -9,6 +9,11 @@ public class MaxPerimeter {
 
             if (figure.getPerimeter() > max) max = figure.getPerimeter();
         }
+        for (Figure figure : figures){
+            if (figure.getPerimeter() == max){
+                System.out.println("Figure with maximum perimeter: " + figure.getName());
+            }
+        }
 
         return max;
     }

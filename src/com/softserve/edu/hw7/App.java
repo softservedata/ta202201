@@ -6,13 +6,13 @@ public class App {
 
     public static void main (String[] args){
         Figure [] figures = {
-                new Rectangle (3, 5), // 16
-                new Rectangle (10, 26), // 72
-                new Square(42),  // 131.88
-                new Triangle(8, 5, 11)
+                new Rectangle ("Rectangle 1", 3, 5), // 16
+                new Rectangle ("Rectangle 2", 10, 26), // 72
+                new Square("Square", 42),  // 131.88
+                new Triangle("Triangle", 8, 5, 11)
         };
         MaxPerimeter maxPerimeter = new MaxPerimeter();
 
-        System.out.println("Maximum perimeter: " + maxPerimeter.getMaxPerimeter(figures));
+        System.out.println("Perimeter: " + maxPerimeter.getMaxPerimeter(figures));
     }
 }
