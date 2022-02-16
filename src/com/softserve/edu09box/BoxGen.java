@@ -20,5 +20,6 @@ public class BoxGen<T> {
 	}
 
 //    public static T todo() { // Error
+//		return obj;
 //    }
 }
