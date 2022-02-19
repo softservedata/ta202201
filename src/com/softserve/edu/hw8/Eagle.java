@@ -1,25 +1,27 @@
 package com.softserve.edu.hw8;
 
-public class Eagle extends FlyingBird{
+public class Eagle extends FlyingBird {
     String name;
 
-    public Eagle(String orel) {
-
+    public Eagle(String name) {
+        this.name = name;
     }
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public String toString() {
-        return "Eagle{}";
+        return "Eagle{" +
+                "name='" + name + '\'' +
+                "isFly()='" + isFly() + '\'' +
+                '}';
     }
 
-
     @Override
-    public int compareTo(Bird o) {
-        return 0;
+    public int compareTo(Bird bird) {
+        return getName().compareTo(bird.getName());
     }
 }

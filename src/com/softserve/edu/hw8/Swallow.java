@@ -3,22 +3,25 @@ package com.softserve.edu.hw8;
 public class Swallow extends FlyingBird {
     String name;
 
-    public Swallow(String lastochka) {
-
+    public Swallow(String name) {
+        this.name = name;
     }
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public String toString() {
-        return "Swallow{}";
+        return "Swallow{" +
+                "name='" + name + '\'' +
+                "isFly()='" + isFly() + '\'' +
+                '}';
     }
 
     @Override
-    public int compareTo(Bird o) {
-        return 0;
+    public int compareTo(Bird bird) {
+        return getName().compareTo(bird.getName());
     }
 }

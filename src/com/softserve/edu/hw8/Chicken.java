@@ -1,24 +1,27 @@
 package com.softserve.edu.hw8;
 
-public class Chicken extends NonFlyingBird{
+public class Chicken extends NonFlyingBird {
     String name;
 
-    public Chicken(String kuritza) {
-        super();
+    public Chicken(String name) {
+        this.name = name;
     }
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public String toString() {
-        return "Chicken{}";
+        return "Chicken{" +
+                "name='" + name + '\'' +
+                "isFly()='" + isFly() + '\'' +
+                '}';
     }
 
     @Override
-    public int compareTo(Bird o) {
-        return 0;
+    public int compareTo(Bird bird) {
+        return getName().compareTo(bird.getName());
     }
 }
