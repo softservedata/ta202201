@@ -1,6 +1,7 @@
 package com.softserve.edu.hw10;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class App {
@@ -18,22 +19,15 @@ public class App {
         lstInt2.add(2);
         lstInt2.add(1);
         lstInt2.add(1);
-        List<Integer> lstInt3 = new ArrayList<>();
-        lstInt3 = App.commonElem(lstInt1,lstInt2);
-        System.out.println(lstInt3);
-    }
-    private static List<Integer> commonElem(List<Integer> lstInt1, List<Integer> lstInt2){
-        System.out.println("elements: " + lstInt1);
-        System.out.println("elements: " + lstInt2);
-        List<Integer> lstInt3 = new ArrayList<>();
-        for (int i = 0; i < lstInt1.size(); i++) {
-            if (lstInt2.contains(lstInt1.get(i)) && !lstInt3.contains(lstInt1.get(i))){
-                System.out.println(lstInt1.get(i));
-                lstInt3.add(lstInt1.get(i));
-            }
-        }
-        System.out.println(lstInt3);
-        return(lstInt3);
+        System.out.println(lstInt1 + "lstInt1");
+        System.out.println(lstInt2 + "lstInt2");
+        HashSet<Integer> hashSet1 = new HashSet<>(lstInt1);
+        HashSet<Integer> hashSet2 = new HashSet<>(lstInt2);
+        System.out.println(hashSet1 + "hashSet1");
+        System.out.println(hashSet2 + "hashSet2");
+        boolean value
+                = hashSet1.equals(hashSet2);
+        System.out.println("Content is equal: " + value);
     }
 }
 
