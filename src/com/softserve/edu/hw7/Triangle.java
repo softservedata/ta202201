@@ -10,18 +10,5 @@ public class Triangle extends Figure{
         this.y=y;
         this.z=z;
     }
-
-    public double getX() {
-        return x;
-    }
-    public double getY() {
-        return y;
-    }
-    public double getZ() {
-        return z;
-    }
-
-    public double getPerimeter(double x, double y, double z) {
-        return x+y+z;
-    }
+    public double getPerimeter() { return x+y+z;}
 }

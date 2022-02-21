@@ -6,9 +6,9 @@ public class Square extends Figure {
         super("Square");
         this.side=side;
     }
-    public double getSide () {return side;}
-    @Override
-    public double getPerimeter(double side) {
+    //public double getSide () {return side;}
+
+    public double getPerimeter() {
         return side*4;
     }
 }

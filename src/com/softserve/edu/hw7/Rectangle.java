@@ -8,11 +8,7 @@ public class Rectangle extends  Figure {
         this.a=a;
         this.b=b;
     }
-    public double getA (){return a;}
-    public double getB () {return b;}
-
-    @Override
-    public double getPerimeter(double a, double b) {
+    public double getPerimeter() {
         return 2*(a+b);
     }
 }

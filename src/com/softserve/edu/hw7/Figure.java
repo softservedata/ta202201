@@ -1,14 +1,11 @@
 package com.softserve.edu.hw7;
 
-
-
 public abstract class Figure {
     private String name;
     public Figure (String name) {
         this.name=name;
-        System.out.println("Figure name is");
+        //System.out.println("Figure name is" + name);
     }
-    public abstract double getPerimeter ();
 
     public void setName (String name) {
         this.name=name;
@@ -17,7 +14,5 @@ public abstract class Figure {
         return name;
     }
 
-    public abstract double getPerimeter(double side);
-
-    public abstract double getPerimeter(double a, double b);
+    public abstract double getPerimeter();
 }
