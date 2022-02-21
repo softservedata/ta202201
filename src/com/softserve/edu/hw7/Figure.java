@@ -6,13 +6,8 @@ public abstract class Figure {
         this.name=name;
         //System.out.println("Figure name is" + name);
     }
-
-    public void setName (String name) {
-        this.name=name;
-    }
-    public String getName () {
-        return name;
-    }
+    public void setName (String name) {this.name=name;}
+    public String getName () {return name;}
 
     public abstract double getPerimeter();
 }
