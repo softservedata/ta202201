@@ -13,6 +13,7 @@ public class MatchArray {
                 }
             }
         }
+
         System.out.println(matchArray);
     }
 }
