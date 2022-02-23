@@ -3,28 +3,28 @@ package com.softserve.edu09set;
 import java.util.Comparator;
 
 public class Employee implements Comparable<Employee> {
-	
+
 	public static class ByNameAndId implements Comparator<Employee> {
-        @Override
-        public int compare(Employee em1, Employee em2) {
-        	if ((em1 == null) && (em2 == null)) {
-        		return 0;
-        	} else if (em1 == null) {
-        		return -1;
-        	} else if (em2 == null) {
-        		return 1;
-        	}
-        	int byName = em1.getName().compareTo(em2.getName());
-            return byName == 0 ? em1.getId() - em2.getId() : byName;
-        }
-    }
+		@Override
+		public int compare(Employee em1, Employee em2) {
+			if ((em1 == null) && (em2 == null)) {
+				return 0;
+			} else if (em1 == null) {
+				return -1;
+			} else if (em2 == null) {
+				return 1;
+			}
+			int byName = em1.getName().compareTo(em2.getName());
+			return byName == 0 ? em1.getId() - em2.getId() : byName;
+		}
+	}
 	
 	//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	private int id;
 	private String name;
 
 	public Employee() {
-		this.id = 0;
+		this.id = -1;
 		this.name = "";
 	}
 
@@ -37,18 +37,18 @@ public class Employee implements Comparable<Employee> {
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
-
 	public String getName() {
 		return name;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -85,7 +85,7 @@ public class Employee implements Comparable<Employee> {
 		}
 		return name.equals(other.name);
 	}
-	
+
 	@Override
 	public String toString() {
 		return "\nEmployee [id=" + id + ", name=" + name + "]";
@@ -93,6 +93,9 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public int compareTo(Employee employee) {
+		if (employee == null) {
+			return 0;
+		}
 		//return name.compareTo(employee.getName());
 		return id - employee.getId();
 		// return 1;
