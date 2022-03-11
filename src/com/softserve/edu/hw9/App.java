@@ -8,17 +8,17 @@ public class App {
         List<Integer> firstList = new ArrayList<Integer>()
         {{
             add(0);
+            add(53);
             add(5);
-            add(51);
             add(17);
         }};
 
         List<Integer> secondlist = new ArrayList<Integer>()
         {{
             add(0);
-            add(27);
-            add(53);
             add(17);
+            add(53);
+            add(1);
         }};
 
         System.out.println("First List: " + firstList);

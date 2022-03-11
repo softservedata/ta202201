@@ -4,12 +4,12 @@ import java.util.*;
 
 public class MatchArray {
     public void getMatchArray(List<Integer> firstList, List<Integer> secondList){
-        List<Integer> matchArray = new ArrayList<Integer>();
+        List<Integer> matchArray = new ArrayList<>();
 
-        for (int i = 0; i < firstList.size(); i++){
-            for (int j = 0; j < secondList.size(); j++){
-                if (firstList.get(i).equals(secondList.get(j))) {
-                    matchArray.add(firstList.get(i));
+        for (Integer first : firstList) {
+            for (Integer second : secondList) {
+                if (first.equals(second) && !matchArray.contains(first)) {
+                    matchArray.add(first);
                 }
             }
         }
