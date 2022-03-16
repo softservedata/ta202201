@@ -3,7 +3,9 @@ package com.softserve.edu.hw7;
 public class Square extends Figure {
     private double side1;
 
+
     public Square(double side1) {
+        super("Square");
         this.side1 = side1;
     }
 

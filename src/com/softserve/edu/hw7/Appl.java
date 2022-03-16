@@ -25,6 +25,6 @@ public class Appl {
                 max_perimeter = current.getPerimeter();
         for (Figure current : figures)
             if (current.getPerimeter() == max_perimeter)
-        System.out.println(current.getClass().getName().toString() + " " + current.getPerimeter());
+        System.out.println(current.getName() + " " + current.getPerimeter());
     }
 }
