@@ -1,4 +1,4 @@
-package com.softserve.edu11dialog;
+package com.softserve.edu12dialog;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -34,17 +34,20 @@ public class DialogTime extends JFrame {
 		Container container = this.getContentPane();
 		container.add(centerPanel, BorderLayout.CENTER);
 		//
-		buttonTime.addActionListener(new ActionListener() {	
+		buttonTime.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				/*-
 				long ms = System.currentTimeMillis();
 				while (System.currentTimeMillis() - ms < 5000) {
 					tOutput.setText(new Long(System.currentTimeMillis()).toString());
-					// System.out.println("Thread ID = " + Thread.currentThread().getId()
-					// + " Time = " + String.valueOf(System.currentTimeMillis()));
-					System.out.println(tOutput.getText());
+					System.out.println("Thread ID = " + Thread.currentThread().getId() + "  Time = "
+							+ String.valueOf(System.currentTimeMillis()));
 				}
 				tOutput.setText(new Long(System.currentTimeMillis()).toString());
-				System.out.println(tOutput.getText());
+				*/
+				Runnable r = new WorkTime(DialogTime.this);
+				Thread t = new Thread(r);
+				t.start();
 				System.out.println("buttonTime: Thread ID = " + Thread.currentThread().getId());
 			}
 		});
@@ -56,4 +59,9 @@ public class DialogTime extends JFrame {
 			}
 		});
 	}
+
+	public void setTOutput(String textOutput) {
+		tOutput.setText(textOutput);
+	}
+
 }
