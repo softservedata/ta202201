@@ -1,4 +1,5 @@
 package com.softserve.edu12ser;
+
 //import java.io.File;
 //import java.io.FileInputStream;
 //import java.io.FileOutputStream;
@@ -6,12 +7,14 @@ package com.softserve.edu12ser;
 //import java.io.ObjectInputStream;
 //import java.io.ObjectOutputStream;
 
+import com.google.gson.Gson;
+
 import java.io.*;
 
 //import com.google.gson.Gson;
 
 public class DemoSerialization {
-	// /*- Binary
+	/*- Binary
 	public static void main(String[] args) {
 		//
 	    Student student = new Student("ComputerScience", 1, "Ivanov", "12345");
@@ -40,9 +43,9 @@ public class DemoSerialization {
 	    }
 	    //
 	}
-	// */
+	*/
 	//
-	/*- Json
+	// /*- Json
 	public static void main(String[] args) {
 		Gson gson = new Gson();
 		Student student = new Student("ComputerScience", 1, "Ivanov", "12345");
@@ -52,8 +55,8 @@ public class DemoSerialization {
 		ser = ser.substring(0, ser.length() - 1) + ",\"password\":\"" + "qwerty54321" + "\"}";
 		System.out.println("ser = " + ser);
 		//
-		Student unknown = (Student) gson.fromJson(ser, Student.class);  // Deserialization
+		Student unknown = gson.fromJson(ser, Student.class);  // Deserialization
 		System.out.println("After DeSerialization unknown = " + unknown);
 	}
-	*/
+	// */
 }
