@@ -10,18 +10,18 @@ public class Appl11 {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        String symbolsRange = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\\W).{12,}";
+        String criteria = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\\W).{12,}";
 
-        int attempts = 1;
+        int attempts=1;
         String pass;
-        for (int inputs=1; inputs<=3; inputs++) {
+        for (int k=1; k<=3; k++) {
             System.out.println("Please enter password: ");
             pass = br.readLine();
-            if (Pattern.compile(symbolsRange).matcher(pass).matches()) {
+            if (Pattern.compile(criteria).matcher(pass).matches()) {
                 System.out.println("Password meets criteria!");
                 break;
             } else {
-                System.out.println("Password does not meet criteria");
+                System.out.print("Password does not meet criteria. ");
             }
             attempts = ++attempts;
             if (attempts > 3) {System.out.println("Sorry, you have used up all 3 attempts.");
