@@ -1,6 +1,7 @@
 package com.softserve.edu.hw13;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class LambdaSortingAppImp implements LambdaSortingApp {
             }
         };
 
-        peopleName.sort(operation);
+        Collections.sort(peopleName, operation);
     }
 
     private void printConsole(String title, List<String> printList) {
