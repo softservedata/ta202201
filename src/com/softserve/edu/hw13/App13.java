@@ -9,6 +9,29 @@ package com.softserve.edu.hw13;
         Для коду використати пакет com.softserve.homework13
         Запушати код на github у свою вітку.*/
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class App13 {
-    // I will finish and push code later by end of the day
+    public static void main(String[] args) {
+        List<String> names = new ArrayList<>();
+        names.add("Alex");
+        names.add("Oleh");
+        names.add("Serhii");
+        names.add("Olha");
+        names.add("Halyna");
+
+        names.sort((a,b) -> a.compareTo(b));
+        System.out.println("Sorted lstStr = " + names);
+
+        names.sort((a, b) -> {
+            if (a.length() == b.length()) {
+                return a.compareTo(b);
+            } else return a.length() - b.length();
+        });
+        System.out.println(names);
+
+    }
+
 }
